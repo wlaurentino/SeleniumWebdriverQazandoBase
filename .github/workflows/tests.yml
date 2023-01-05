@@ -63,7 +63,7 @@ jobs:
             LACK_ICON: https://www.freeiconspng.com/thumbs/error-icon/round-error-icon-16.jpg
             SLACK_MESSAGE: 'Falha na execução de testes do PR :fire:'
             SLACK_TITLE: 'Falha na execução de testes do PR :fire:'
-            SLACK_USERNAME: FALHA
+            SLACK_USERNAME: FALHA!
 
 
 # gerar o relatório

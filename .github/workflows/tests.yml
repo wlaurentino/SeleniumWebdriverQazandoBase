@@ -43,16 +43,16 @@ jobs:
           name: report-tests
           path: '**/formated-report/'
 
-      - name: Enviar notificação Slack - Sucesso
-        if: ${{ success() }}
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          - SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-            SLACK_COLOR: ${{ job.status }}
-            SLACK_ICON: https://www.pngkit.com/png/full/334-3345748_request-new-account-check-mark-circle-icon.png
-            SLACK_MESSAGE: 'Sucesso na execução de testes do PR :white_check_mark:'
-            SLACK_TITLE: 'Sucesso na execução de testes do PR :white_check_mark:'
-            SLACK_USERNAME: SUCESSO
+#      - name: Enviar notificação Slack - Sucesso
+#        if: ${{ success() }}
+#        uses: rtCamp/action-slack-notify@v2
+#        env:
+#          - SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+#            SLACK_COLOR: ${{ job.status }}
+#            SLACK_ICON: https://www.pngkit.com/png/full/334-3345748_request-new-account-check-mark-circle-icon.png
+#            SLACK_MESSAGE: 'Sucesso na execução de testes do PR :white_check_mark:'
+#            SLACK_TITLE: 'Sucesso na execução de testes do PR :white_check_mark:'
+#            SLACK_USERNAME: SUCESSO
 
 #      - name: Enviar notificação Slack - Sucesso
 #        if: ${{ failure() }}

@@ -54,16 +54,16 @@ jobs:
             SLACK_TITLE: 'Sucesso na execução de testes do PR :white_check_mark:'
             SLACK_USERNAME: SUCESSO
 
-      - name: Enviar notificação Slack - Sucesso
-        if: ${{ failure() }}
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          - SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-            SLACK_COLOR: ${{ job.status }}
-            LACK_ICON: https://www.freeiconspng.com/thumbs/error-icon/round-error-icon-16.jpg
-            SLACK_MESSAGE: 'Falha na execução de testes do PR :fire:'
-            SLACK_TITLE: 'Falha na execução de testes do PR :fire:'
-            SLACK_USERNAME: FALHA!
+#      - name: Enviar notificação Slack - Sucesso
+#        if: ${{ failure() }}
+#        uses: rtCamp/action-slack-notify@v2
+#        env:
+#          - SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+#            SLACK_COLOR: ${{ job.status }}
+#            LACK_ICON: https://www.freeiconspng.com/thumbs/error-icon/round-error-icon-16.jpg
+#            SLACK_MESSAGE: 'Falha na execução de testes do PR :fire:'
+#            SLACK_TITLE: 'Falha na execução de testes do PR :fire:'
+#            SLACK_USERNAME: FALHA!
 
 
 # gerar o relatório

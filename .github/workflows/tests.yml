@@ -65,8 +65,3 @@ jobs:
           SLACK_TITLE: 'Falha na execução de testes do PR :fire:'
           SLACK_USERNAME: FALHA!
 
-
-# gerar o relatório
-
-
-

@@ -11,13 +11,13 @@
 
     @login-sucesso
     Cenário: Login com sucesso
-#      Quando preencho login "wlaurentino@gmail.com" e senha "123456"
+      Quando preencho login "wlaurentino@gmail.com" e senha "123456"
       E clico em Login
       Então vejo mensagem de login com sucesso
 
     @login-invalido
     Esquema do Cenário: Validar <name>
-      Quando preencho login "<user>" e senha "<password>>"
+#      Quando preencho login "<user>" e senha "<password>>"
       E clico em Login
       Então vejo mensagem "<message>" de campo não preenchido
 
